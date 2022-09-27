@@ -3,9 +3,14 @@
 }
 
 main {
-    width: 100;
+    width: 100%;
 }
 
+.gallery {
+    
+}
 img {
-    width: 100px;
+    width: 30%;
+    margin: calc(10%/6);
+
 }
