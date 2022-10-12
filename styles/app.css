@@ -4,28 +4,27 @@ body, html {
     padding: 0;
     box-sizing: border-box;
 }
-
 header {
+    height: fit-content;
+}
+nav {
     display: flex;
-    height: 600px;
+    height: 300px;
+    width: 100%;
     background-color: #2e403d;
     align-items: center;
     justify-content: space-around;
-    
 }
-nav {
-    width: 70%;
-}
+
 .logo {
-    height: 600px;
+    height: 300px;
     width: auto;
-    max-height: 600px;
-    max-width: 600px;
-    line-height: 30px;
 }
 .nav_links {
     display: flex;
-    justify-content: space-between;
+    flex: 1;
+    max-width: 50%;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -40,7 +39,7 @@ nav {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 40px;
 
 }
 .nav_links li a:hover {
@@ -51,14 +50,14 @@ nav {
 button {
     cursor: pointer;
     border: none;
-    padding: 16px 36px;
+    padding: 6px 20px;
     border-radius:  50px;
     background: #43a2cf;
     color: #fafafa;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 80px;
     transition: .4s;
 }
 button:hover {
@@ -69,8 +68,6 @@ button:hover {
 main {
     width: 100%;
     margin: 0 auto;
-   
-
 }
 
 .gallery {
@@ -90,5 +87,19 @@ main {
     /* margin: calc(5%/5); */
     margin-top: 8px;
     vertical-align: middle;
+}
+
+.column img:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: .4s ease-in;
+}
+
+@media (width < 500px){
+    .nav_links,
+    nav {
+        flex-direction: column;
+    }
 
 }
+
