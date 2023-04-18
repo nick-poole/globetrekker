@@ -32,7 +32,9 @@ $--scroll-thumb-color:;
 
 4/18/23
 
-- FEAT: Nav Menu close/open toggle w/ javascript
+- FEAT: navMenu hide when link selected w/ javascript
+
+- FEAT: navMenu close/open toggle w/ javascript
 
 - CONFIGURE: SASS, Scripts, & CDNs. Select initial color pallet from logo img.
 
