@@ -1,0 +1,8 @@
+@use '_variables.scss';
+@use '_base.scss';
+
+.home {
+    &__img{
+        position: absolute;
+    }
+}

@@ -1,0 +1,137 @@
+/*======== GOOGLE FONTS ========*/
+
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+/*======= CSS VARIABLES  =======*/
+:root {
+  --header-height: 3rem;
+
+/*========== Colors ==========*/
+  /* Change favorite color to match images */
+  /*Green dark 190 - Green 171 - Grren Blue 200*/
+
+
+/* HSL color mode */
+
+ /*==== Font and typography ====*/
+ --body-font: 'Open Sans', sans-serif;
+ --title-font: 'Raleway', sans-serif;
+ --biggest-font-size: 2.5rem;
+ --h1-font-size: 1.5rem;
+ --h2-font-size: 1.25rem;
+ --h3-font-size: 1rem;
+ --normal-font-size: .938rem;
+ --small-font-size: .813rem;
+ --smaller-font-size: .75rem;
+
+ /*==== Font weight ====*/
+ --font-medium: 500;
+ --font-semi-bold: 600;
+
+/*===== Margin Bottom =====*/
+--mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-25: 1.25rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+  /*===== z index =====*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  /*===== Hover overlay =====*/
+  --img-transition: .3s;
+  --img-hidden: hidden;
+  --img-scale: scale(1.1);
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+
+
+
+
+=========
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* main {
+} */
+
+.container {
+  display: flex;
+  width: 70vw;
+  border: 2px dashed black;
+  flex: 0.5;
+}
+
+.container:active {
+    width
+}
+.panel {
+  background-size: auto 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 90%;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 5px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+
+  border: 2px solid red;
+}
+
+.panel h3 {
+  font-size: 48px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.panel:active {
+  flex: 7;
+}
+.panel:active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .container:nth-of-type(4),
+  .container:nth-of-type(5) {
+    display: none;
+  }
+}
