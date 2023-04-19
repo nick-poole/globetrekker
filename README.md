@@ -30,6 +30,10 @@ $--scroll-thumb-color:;
 
 ## Commit Log
 
+4/19/23
+
+- CREATE & STYLE (C&S): HOME section && set button styling  
+
 4/18/23
 
 - FEAT: navMenu hide when link selected w/ javascript
@@ -44,4 +48,6 @@ $--scroll-thumb-color:;
 
 - Integrate Initial cards to index.html
 
-### Punch List
+## Punch List
+
+-item
