@@ -36,6 +36,8 @@ $--scroll-thumb-color:;
 
 4/19/23
 
+- C&S: EXPERIENCE section && reselect swiper bundle images with uniform portrait aspect ratios
+
 - C&S: ABOUT & DISCOVER sections && FEAT: Integrate `swiper.js` bundles
 
 - FEAT: Integrate `scrollHeader` in `main.js`
