@@ -10,6 +10,7 @@
         <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
         <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="/styles/css/swiper-bundle.min.css">
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="/styles/css/main.css" />
     </head>
@@ -93,10 +94,84 @@
             </section>
 
             <!--=============== ABOUT ===============-->
-            <section class="about section" id="about"></section>
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Let's take a trip!</h2>
+                        <p class="about__description">With this blog, I aim to share my travel stories, experiences, and
+                            photos with fellow travel enthusiasts who are passionate about discovering new cultures and
+                            landscapes. My goal is to inspire and empower my readers to embark on their own adventures
+                            and create unforgettable memories.
+                        </p>
+
+                        <p class="about__description">
+                            Join me as I take you on a journey through the world, showcasing some of the best travel
+                            destinations, hidden gems, and off-the-beaten-path experiences. Let's connect, share
+                            stories, and embark on new adventures together!
+                        </p>
+                        <a href="#" class="button">Reserve a place</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="/images/dkr/20200203_152643.jpg
+                            " alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="/images/bkk/tan-kaninthanond-RFumqN-7zI0-unsplash.jpg" alt=""
+                                class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!--=============== DISCOVER ===============-->
-            <section class="discover section" id="discover"></section>
+            <section class="discover section" id="discover">
+                <h2 class="section__title">The World Awaits</h2>
+                <h3 class="section__subtitle">Discover what youve been missing</h3>
+
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--=============== DISCOVER 1 ===============-->
+                        <div class="discover__card swiper-slide">
+                            <img src="/images/dkr/20200203_163927.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Senegal</h2>
+                                <span class="discover__description">Africa meets the Atlantic</span>
+                            </div>
+                        </div>
+
+                        <!--=============== DISCOVER 2 ===============-->
+                        <div class="discover__card swiper-slide">
+                            <img src="/images/bkk/wanaporn-yangsiri-UkMtyk5Rqhs-unsplash.jpg" alt=""
+                                class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Thailand</h2>
+                                <span class="discover__description"> The Land of Smiles</span>
+                            </div>
+                        </div>
+
+                        <!--=============== DISCOVER 3 ===============-->
+                        <div class="discover__card swiper-slide">
+                            <img src="/images/kin/20170101_171907 edit.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Jamaica</h2>
+                                <span class="discover__description">Reggae Rythms &amp; Tropical Dreams</span>
+                            </div>
+                        </div>
+
+                        <!--=============== DISCOVER 4 ===============-->
+                        <div class="discover__card swiper-slide">
+                            <img src="/images/YVR/hunter-reilly-fcKfDyelErE-unsplash.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Vancouver</h2>
+                                <span class="discover__description">Urban Nature Haven</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!--=============== DESTINATIONS ===============-->
             <section class="destinations section" id="destinations"></section>
@@ -189,6 +264,7 @@
 
         <!--========== SCROLL REVEAL JS ==========-->
         <!--========== SWIPER JS ==========-->
+        <script src="/js/swiper-bundle.min.js"></script>
         <!--========== MAIN JS ==========-->
         <script src="./js/main.js"></script>
     </body>
