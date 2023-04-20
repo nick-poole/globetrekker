@@ -567,8 +567,84 @@ input {
     background-image: none;
 }
 
+/*=============== PLACES ===============*/
+.place {
+    &__card,
+    &__img {
+        height: 230px;
+    }
+    &__container {
+        // grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+    }
+    &__card {
+        position: relative;
+        overflow: $--img-hidden;
+
+        &:hover .place__img {
+            transform: $--img-scale;
+            -webkit-transform: $--img-scale;
+            -moz-transform: $--img-scale;
+            -ms-transform: $--img-scale;
+            -o-transform: $--img-scale;
+        }
+    }
+    &__img {
+        transition: $--img-transition;
+        -webkit-transition: $--img-transition;
+        -moz-transition: $--img-transition;
+        -ms-transition: $--img-transition;
+        -o-transition: $--img-transition;
+    }
+    &__content,
+    &__title {
+        color: $--white;
+    }
+    &__content {
+        position: absolute;
+        bottom: -2rem;
+        left: 0;
+        width: auto;
+        // height: ;
+        // display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.75rem 0.75rem 1rem;
+    }
+    &__rating {
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+
+        &-icon {
+            font-size: 0.75rem;
+            margin-right: $--mb-0-25;
+        }
+    }
+    &__subtitle,
+    &__price {
+        display: block;
+    }
+    &__title {
+        font-size: $--h3-font-size;
+        margin-bottom: $--mb-0-25;
+    }
+    &__subtitle {
+        font-size: $--smaller-font-size;
+        margin-bottom: $--mb-1-25;
+    }
+    &__button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 0.75rem 1rem;
+    }
+}
+
 /*=============== FOOTER ===============*/
 .footer {
+    background-color: $--dark-slate-gray;
+
     &__container {
         row-gap: 5rem;
     }
@@ -576,6 +652,11 @@ input {
     &__content {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         row-gap: 2rem;
+    }
+
+    &__img {
+        height: 125px;
+        width: 125px;
     }
 
     &__title,
